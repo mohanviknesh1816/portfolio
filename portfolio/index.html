@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mohan Viknesh S — Portfolio</title>
+<meta name="description" content="Mohan Viknesh S — Final year B.Tech AI &amp; Data Science student. Finding patterns where others see noise." />
+
+<!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (labels/data) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">MV<span class="dot">.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#journey" class="nav-link" data-nav>Journey</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+        <li><a href="#certifications" class="nav-link" data-nav>Certifications</a></li>
+        <li><a href="#beyond" class="nav-link" data-nav>Beyond</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============ HOME / HERO ============ -->
+  <section class="hero" id="home">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-glow" id="heroGlow"></div>
+    <div class="hero-grid"></div>
+
+    <div class="floating-shapes" aria-hidden="true">
+      <span class="shape shape-ring"></span>
+      <span class="shape shape-square"></span>
+      <span class="shape shape-tri"></span>
+      <span class="shape shape-dot"></span>
+    </div>
+
+    <div class="container hero-content">
+      <p class="eyebrow reveal">/ portfolio</p>
+      <h1 class="hero-name reveal">Mohan Viknesh S</h1>
+      <h2 class="hero-headline reveal">
+        <span id="typedText"></span><span class="cursor" aria-hidden="true">|</span>
+      </h2>
+      <p class="hero-intro reveal">
+        Final-year B.Tech Artificial Intelligence &amp; Data Science student who treats every dataset,
+        every hackathon, and every half-finished idea as a question worth chasing.
+        I build things to understand them — then build them again, better.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="resume.pdf" class="btn btn-primary ripple" download>
+          <span>Download Resume</span>
+        </a>
+        <a href="https://github.com/mohanviknesh1816" target="_blank" rel="noopener" class="btn btn-outline ripple">
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mohan-viknesh-s-040b642a3/" target="_blank" rel="noopener" class="btn btn-outline ripple">
+          <span>LinkedIn</span>
+        </a>
+        <a href="#contact" class="btn btn-outline ripple">
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-text">Scroll</span>
+      <span class="scroll-line"><span class="scroll-dot"></span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-eyebrow reveal">01 / About</p>
+      <h2 class="section-title reveal">The short story so far</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I didn't fall in love with technology through a single "aha" moment — it happened gradually,
+            somewhere between breaking my first Python script and fixing it three hours later at 1 a.m.,
+            grinning like I'd cracked a code nobody else could see.
+          </p>
+          <p>
+            That curiosity never really settled down. I chase new tools before I'm asked to, take apart
+            problems that don't concern me just to see how they tick, and treat every hackathon as an
+            excuse to build something that didn't exist twenty-four hours earlier. Some of those builds
+            became dashboards. Some became recommendation engines. One became a voice assistant meant
+            to make technology feel less intimidating for senior citizens.
+          </p>
+          <p>
+            Along the way I picked up a few certifications, a habit of reading documentation for fun,
+            and a quiet belief that the best way to learn a concept is to build something that forces
+            you to actually need it. I'm not chasing a title. I'm chasing the next interesting problem —
+            and I'm fairly certain I haven't found the best one yet.
+          </p>
+        </div>
+
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-number">04</span>
+            <span class="stat-label">Certifications earned</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">04+</span>
+            <span class="stat-label">Projects shipped</span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MY JOURNEY (TIMELINE) ============ -->
+  <section class="section section-alt" id="journey">
+    <div class="container">
+      <p class="section-eyebrow reveal">02 / Journey</p>
+      <h2 class="section-title reveal">How I got here</h2>
+
+      <div class="timeline">
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Foundation</span>
+            <h3>Maharishi Vidya Mandir, Karaikudi</h3>
+            <p>Where the first questions started — the kind that don't stop at the textbook answer.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Higher Education</span>
+            <h3>Saranathan College of Engineering, Trichy</h3>
+            <p>Stepped into engineering with more curiosity than certainty — figured out the rest along the way.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Specialization</span>
+            <h3>Artificial Intelligence &amp; Data Science</h3>
+            <p>Found the field that let curiosity and logic work on the same problem at the same time.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Validation</span>
+            <h3>Microsoft Certifications</h3>
+            <p>Turned self-study into proof — Azure Fundamentals and Azure AI Fundamentals, back to back.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Practice</span>
+            <h3>Projects</h3>
+            <p>From sales dashboards to recommendation engines — turning ideas into things that actually run.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Pressure-Tested</span>
+            <h3>Hackathons</h3>
+            <p>Where deadlines forced good ideas to become working ones — fast.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Ongoing</span>
+            <h3>Continuous Learning</h3>
+            <p>New tools, new papers, new rabbit holes — the learning never really pauses.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">What's Next</span>
+            <h3>Future Goals</h3>
+            <p>Building AI systems that are not just intelligent, but genuinely useful to the people who need them.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT I BUILD (SKILLS) ============ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-eyebrow reveal">03 / Toolkit</p>
+      <h2 class="section-title reveal">What I build with</h2>
+
+      <div class="skills-groups">
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Programming Languages</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">C</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Query Languages</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">SQL</span>
+            <span class="skill-chip">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Cloud Computing</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">Microsoft Azure</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">BI &amp; Data Tools</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">Power BI</span>
+            <span class="skill-chip">Excel</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Machine Learning</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">Scikitlearn</span>
+            <span class="skill-chip">numpy</span>
+            <span class="skill-chip">,pandas</span>
+            <span class="skill-chip">Tensorflow</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Data Visualization & Reporting</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">Dashboards</span>
+            <span class="skill-chip">Charts&Graphs</span>
+            <span class="skill-chip">KPI Tracking</span>
+            <span class="skill-chip">Data Storytelling</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Dev Tools &amp; Platforms</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">Git</span>
+            <span class="skill-chip">GitHub</span>
+            <span class="skill-chip">VS Code</span>
+            <span class="skill-chip">Jupyter Notebook</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <p class="section-eyebrow reveal">04 / Projects</p>
+      <h2 class="section-title reveal">Featured work</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-index">01</span>
+            <h3>BMW Sales Dashboard</h3>
+          </div>
+          <p class="project-desc">Power BI dashboard for analyzing business performance and generating insights.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Excel</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/mohanviknesh1816/BMW_Sales_Report-" target="_blank" rel="noopener" class="btn btn-small ripple">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-index">02</span>
+            <h3>Movie Recommendation System</h3>
+          </div>
+          <p class="project-desc">Content-based recommendation system using cosine similarity.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/mohanviknesh1816/Movie-Recommendation-system" target="_blank" rel="noopener" class="btn btn-small ripple">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-index">03</span>
+            <h3>Senior Digital Assistant</h3>
+          </div>
+          <p class="project-desc">AI-powered assistant designed to help senior citizens interact with smartphones through accessible voice guidance.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/mohanviknesh1816/AI-digital-assistant-for-senior-citizen" target="_blank" rel="noopener" class="btn btn-small ripple">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-index">04</span>
+            <h3>Power BI Sales Report</h3>
+          </div>
+          <p class="project-desc">Interactive Power BI dashboard built to analyze sales data, KPIs, trends, customer performance, and business insights.</p>
+          <div class="project-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">Excel</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/mohanviknesh1816/PowerBI-report-on-sales-data" target="_blank" rel="noopener" class="btn btn-small ripple">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <p class="section-eyebrow reveal">05 / Certifications</p>
+      <h2 class="section-title reveal">Proof of practice</h2>
+
+      <div class="cert-grid" id="certGrid">
+        <div class="cert-card reveal">
+          <span class="cert-badge">AZ-900</span>
+          <h3>Microsoft Azure Fundamentals</h3>
+          <p>Microsoft</p>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-badge">AI-900</span>
+          <h3>Microsoft Azure AI Fundamentals</h3>
+          <p>Microsoft</p>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-badge">BI</span>
+          <h3>Power BI Certification</h3>
+          <p>360DigiTMG</p>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-badge">BC</span>
+          <h3>Business Communication Certification</h3>
+          <p>HP LIFE</p>
+        </div>
+        <!-- Add future certifications here as additional .cert-card blocks -->
+         <div class="cert-card reveal">
+          <span class="cert-badge">PL300</span>
+          <h3>PowerBI Data Analyst Associate</h3>
+          <p>Microsoft</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BEYOND TECHNOLOGY ============ -->
+  <section class="section section-alt" id="beyond">
+    <div class="container">
+      <p class="section-eyebrow reveal">06 / Beyond Technology</p>
+      <h2 class="section-title reveal">What drives the work</h2>
+
+      <div class="beyond-grid">
+        <div class="beyond-card reveal">
+          <h3>Curiosity</h3>
+          <p>The itch to know how something works before being told to care.</p>
+        </div>
+        <div class="beyond-card reveal">
+          <h3>Innovation</h3>
+          <p>Preferring the untested approach if it might just work better.</p>
+        </div>
+        <div class="beyond-card reveal">
+          <h3>Continuous Learning</h3>
+          <p>Treating "I don't know yet" as a starting point, not a stopping point.</p>
+        </div>
+        <div class="beyond-card reveal">
+          <h3>Problem Solving</h3>
+          <p>Enjoying the puzzle as much as the payoff.</p>
+        </div>
+        <div class="beyond-card reveal">
+          <h3>Adaptability</h3>
+          <p>Comfortable rebuilding the plan the moment the data disagrees with it.</p>
+        </div>
+        <div class="beyond-card reveal">
+          <h3>Creativity</h3>
+          <p>Looking for the unexpected angle before settling for the obvious one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="section-eyebrow reveal">07 / Contact</p>
+      <h2 class="section-title reveal">Let's talk</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-lead">
+            Have a project, an opportunity, or just an interesting problem to share? My inbox is open.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:somuvicky24@gmail.com">somuvicky24@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/mohanviknesh1816" target="_blank" rel="noopener">github.com/mohanviknesh1816</a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/mohan-viknesh-s-040b642a3/" target="_blank" rel="noopener">linkedin.com/in/mohan-viknesh-s</a>
+            </li>
+            <li>
+              <span class="contact-label">Location</span>
+              <span>Karaikudi, Sivagangai, Tamil Nadu, India</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary ripple full-width">
+            <span>Send Message</span>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Designed &amp; Built by Mohan Viknesh S</p>
+      <p class="footer-year">© <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
